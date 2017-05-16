@@ -3,7 +3,6 @@
 public interface Figure {
     double getArea();
     double getPerimeter();
-    void setColor();
+    void setColor(String color);
     String getColor();
-
 }

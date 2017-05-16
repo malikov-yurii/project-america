@@ -1,5 +1,5 @@
-
-public abstract class Triangle {
+// updated 2017-05-16 23 40 by tonchief. added getArea;
+public abstract class Triangle implements Figure {
 
     private double sideA;
     private double sideB;
@@ -12,8 +12,14 @@ public abstract class Triangle {
     }
 
 
-    public double getPerimetr() {
+    public double getPerimeter() {
         return sideA + sideB + sideC;
+    }
+
+    public double getArea(){
+        //Area	=	 √	 p	 (	p	−	a	) 	(	p	−	b	)	 (	p	−	c	)
+        double p = this.getPerimeter();
+        return Math.sqrt(p * (p - sideA) * (p - sideB) * (p	- sideC));
     }
 
     public double getSideA() {
@@ -28,5 +34,5 @@ public abstract class Triangle {
         return sideC;
     }
 
-    protected abstract String getColour();
+    public abstract String getColor();
 }
