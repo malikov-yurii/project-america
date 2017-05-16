@@ -1,7 +1,6 @@
-// updated 2017-05-16 23 40 by tonchief. Implemented Figure. Added getPerimeter. Changed hardcoded PI to Math.PI.
 
-abstract class Circle implements Figure {
-    private final double PI = Math.PI;
+abstract class Circle extends Shape{
+    private final double PI = 3.14159;
     private double radius;
 
     public void setRadius(double radius){
@@ -16,10 +15,6 @@ abstract class Circle implements Figure {
         return PI * radius * radius;
     }
 
-    public double getPerimeter(){
-        return 2 * PI * radius;
-    }
-
     public double getDiameter(){
         return radius * 2;
     }
@@ -28,5 +23,10 @@ abstract class Circle implements Figure {
         return 2 * PI * radius;
     }
 
-    public abstract String getColor();
+
+    @Override
+    String getName() {
+        return "circle";
+    }
+
 }

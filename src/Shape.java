@@ -1,6 +1,14 @@
 /**
  * @author Yurii Malikov
  */
-public enum  Shape {
-    TRIANGLE, CIRCLE
+public abstract class Shape {
+
+    abstract Color getColor();
+
+    abstract String getName();
+
+    @Override
+    public String toString() {
+        return getName();
+    }
 }

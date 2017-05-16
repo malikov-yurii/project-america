@@ -3,19 +3,23 @@
  */
 public class WhiteTriangle extends Triangle {
 
-    private static String WHITE_COLOUR = "WHITE TRIANGLE";
-
     public WhiteTriangle(double a, double b, double c) {
         super(a, b, c);
     }
 
-//    @Override
-//    public void setColor(String color) {
-//
-//    }
+    private Color color;
+
+    public WhiteTriangle() {
+        color = Color.WHITE;
+    }
 
     @Override
-    public String getColor() {
-        return WHITE_COLOUR;
+    public Color getColor() {
+        return color;
+    }
+
+    @Override
+    String getName() {
+        return getColor().name().toLowerCase() + ' ' + super.getName();
     }
 }

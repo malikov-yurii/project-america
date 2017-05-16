@@ -1,9 +1,13 @@
-// updated 2017-05-16 23 40 by tonchief. added getArea;
-public abstract class Triangle implements Figure {
+
+public abstract class Triangle extends Shape {
 
     private double sideA;
     private double sideB;
     private double sideC;
+
+    public Triangle(){
+
+    }
 
     public Triangle(double a, double b, double c) {
         this.sideA = a;
@@ -12,14 +16,8 @@ public abstract class Triangle implements Figure {
     }
 
 
-    public double getPerimeter() {
+    public double getPerimetr() {
         return sideA + sideB + sideC;
-    }
-
-    public double getArea(){
-        //Area	=	 √	 p	 (	p	−	a	) 	(	p	−	b	)	 (	p	−	c	)
-        double p = this.getPerimeter();
-        return Math.sqrt(p * (p - sideA) * (p - sideB) * (p	- sideC));
     }
 
     public double getSideA() {
@@ -34,6 +32,9 @@ public abstract class Triangle implements Figure {
         return sideC;
     }
 
-    public abstract String getColor();
-//    public abstract String setColor();
+    @Override
+    String getName() {
+        return "triangle";
+    }
+
 }
