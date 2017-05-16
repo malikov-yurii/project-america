@@ -1,6 +1,6 @@
+// updated 2017-05-17 00 40 by tonchief. Added getPerimeter. Changed hardcoded PI to Math.PI. Renamed methods to conform with updated Shape abstract class
 
 abstract class Circle extends Shape{
-    private final double PI = 3.14159;
     private double radius;
 
     public void setRadius(double radius){
@@ -12,7 +12,7 @@ abstract class Circle extends Shape{
     }
 
     public double getArea(){
-        return PI * radius * radius;
+        return Math.PI  * radius * radius;
     }
 
     public double getDiameter(){
@@ -20,7 +20,7 @@ abstract class Circle extends Shape{
     }
 
     public double getCircumference(){
-        return 2 * PI * radius;
+        return 2 * Math.PI  * radius;
     }
 
 

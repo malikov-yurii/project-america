@@ -20,6 +20,11 @@ public abstract class Triangle extends Shape {
         return sideA + sideB + sideC;
     }
 
+    public double getArea() {
+        double p = this.getPerimeter();
+        return Math.sqrt(p * (p - sideA) * (p - sideB) * (p	- sideC));
+    }
+
     public double getSideA() {
         return sideA;
     }
