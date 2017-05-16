@@ -35,4 +35,5 @@ public abstract class Triangle implements Figure {
     }
 
     public abstract String getColor();
+//    public abstract String setColor();
 }

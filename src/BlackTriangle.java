@@ -10,7 +10,7 @@ public class BlackTriangle extends Triangle {
     }
 
     @Override
-    protected String getColour() {
+    public String getColor() {
         return BLACK_COLOUR;
     }
 }

@@ -9,8 +9,13 @@ public class WhiteTriangle extends Triangle {
         super(a, b, c);
     }
 
+//    @Override
+//    public void setColor(String color) {
+//
+//    }
+
     @Override
-    protected String getColour() {
+    public String getColor() {
         return WHITE_COLOUR;
     }
 }

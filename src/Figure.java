@@ -1,8 +1,8 @@
-/**
- */
+/** Created by tonchief on May/16/2017. */
+
 public interface Figure {
     double getArea();
     double getPerimeter();
-    void setColor(String color);
     String getColor();
+    //    void setColor(String color);
 }
