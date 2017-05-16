@@ -1,4 +1,3 @@
-// upd by tonchief. 2017-05-17 00 44. added getArea implementation
 
 public abstract class Triangle extends Shape {
 
@@ -17,15 +16,14 @@ public abstract class Triangle extends Shape {
     }
 
 
-    public double getPerimeter() {
+    public double getPerimetr() {
         return sideA + sideB + sideC;
     }
 
-    double getArea() {
+    public double getArea() {
         double p = this.getPerimeter();
         return Math.sqrt(p * (p - sideA) * (p - sideB) * (p	- sideC));
     }
-
 
     public double getSideA() {
         return sideA;
