@@ -19,4 +19,3 @@ public class WhiteTriangle extends Triangle {
         return WHITE_COLOUR;
     }
 }
-//change
