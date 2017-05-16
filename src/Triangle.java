@@ -16,7 +16,7 @@ public abstract class Triangle extends Shape {
     }
 
 
-    public double getPerimetr() {
+    public double getPerimeter() {
         return sideA + sideB + sideC;
     }
 
