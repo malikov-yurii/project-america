@@ -3,9 +3,9 @@
  */
 public abstract class AbstractFactory {
 
-    public static BaseFactory getFactory(Color color){
+    public static BaseFactory getFactory(FactoryType type){
 
-        switch (color) {
+        switch (type) {
             case BLACK: return new BlackFactory();
             case WHITE: return new WhiteFactory();
         }
