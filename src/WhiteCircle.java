@@ -1,13 +1,9 @@
 /**
- * @author Yurii Malikov
+ * @author Vitalii Yaichenia
  */
 public class WhiteCircle extends Circle {
 
-    private Color color;
-
-    public WhiteCircle() {
-        color = Color.WHITE;
-    }
+    private static final Color color = Color.WHITE;
 
     @Override
     public Color getColor() {
