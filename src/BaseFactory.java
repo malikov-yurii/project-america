@@ -7,6 +7,5 @@ public abstract class BaseFactory {
 
     abstract Triangle createTriangle();
 
-
-
+    public abstract Rectangle createRectangle();
 }
