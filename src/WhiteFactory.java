@@ -12,4 +12,9 @@ public class WhiteFactory extends BaseFactory {
     Triangle createTriangle() {
         return new WhiteTriangle();
     }
+
+    @Override
+    public Rectangle createRectangle() {
+        return new WhiteRectangle();
+    }
 }
