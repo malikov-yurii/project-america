@@ -3,9 +3,9 @@
  */
 public abstract class BaseFactory {
 
-    abstract Circle createCircle();
+	public abstract Circle createCircle();
 
-    abstract Triangle createTriangle();
+	public abstract Triangle createTriangle();
 
     public abstract Rectangle createRectangle();
 }

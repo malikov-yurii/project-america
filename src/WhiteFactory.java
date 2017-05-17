@@ -4,12 +4,12 @@
 public class WhiteFactory extends BaseFactory {
 
     @Override
-    Circle createCircle() {
+    public Circle createCircle() {
         return new WhiteCircle();
     }
 
     @Override
-    Triangle createTriangle() {
+    public Triangle createTriangle() {
         return new WhiteTriangle();
     }
 
