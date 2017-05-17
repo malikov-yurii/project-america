@@ -1,3 +1,11 @@
+package factories;
+import shapes.circles.Circle;
+import shapes.circles.WhiteCircle;
+import shapes.rectangles.Rectangle;
+import shapes.rectangles.WhiteRectangle;
+import shapes.triangles.Triangle;
+import shapes.triangles.WhiteTriangle;
+
 /**
  * @author Yurii Malikov
  */

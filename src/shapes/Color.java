@@ -1,3 +1,5 @@
+package shapes;
+
 /**
  * @author Yurii Malikov
  */

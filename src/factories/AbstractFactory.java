@@ -1,3 +1,4 @@
+package factories;
 /**
  * @author Yurii Malikov
  */

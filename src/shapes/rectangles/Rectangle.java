@@ -1,9 +1,11 @@
+package shapes.rectangles;
+
+import shapes.Shape;
+
 /**
  * Created by Alex on 17.05.2017.
  */
 public abstract class Rectangle extends Shape {
-
-    public static final String RECTANGLE = "rectangle";
 
     private double sideA;
     private double sideB;
@@ -18,7 +20,7 @@ public abstract class Rectangle extends Shape {
 
     @Override
     public String getName() {
-        return RECTANGLE;
+        return "rectangle";
     }
 
     @Override

@@ -1,19 +1,13 @@
+package shapes.triangles;
+
+import shapes.Color;
+
 /**
  * Created by lecrocodile on 16.05.17.
  */
 public class BlackTriangle extends Triangle {
 
-    private Color color;
-
-    private static String BLACK_COLOUR = "BLACK TRIANGLE";
-
-    public BlackTriangle(double a, double b, double c) {
-        super(a, b, c);
-    }
-
-    public BlackTriangle() {
-        color = Color.BLACK;
-    }
+    private static final Color color = Color.BLACK;
 
     @Override
     public Color getColor() {
@@ -21,7 +15,7 @@ public class BlackTriangle extends Triangle {
     }
 
     @Override
-    String getName() {
+    public String getName() {
         return getColor().name().toLowerCase() + ' ' + super.getName();
     }
 }

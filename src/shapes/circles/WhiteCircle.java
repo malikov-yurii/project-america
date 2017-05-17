@@ -1,3 +1,7 @@
+package shapes.circles;
+
+import shapes.Color;
+
 /**
  * @author Vitalii Yaichenia
  */
@@ -11,7 +15,7 @@ public class WhiteCircle extends Circle {
     }
 
     @Override
-    String getName() {
+    public String getName() {
         return getColor().name().toLowerCase() + ' ' + super.getName();
     }
 }

@@ -1,7 +1,11 @@
+package shapes.circles;
 // updated 2017-05-17 00 40 by tonchief. Added getPerimeter. Changed hardcoded PI to Math.PI. Renamed methods to conform with updated Shape abstract class
 
-abstract class Circle extends Shape{
-    private double radius;
+import shapes.Shape;
+
+public abstract class Circle extends Shape{
+    
+	private double radius;
 
     public void setRadius(double radius){
         this.radius = radius;
@@ -25,7 +29,7 @@ abstract class Circle extends Shape{
 
 
     @Override
-    String getName() {
+    public String getName() {
         return "circle";
     }
 

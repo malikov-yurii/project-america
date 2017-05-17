@@ -1,3 +1,6 @@
+package shapes.triangles;
+
+import shapes.Shape;
 
 public abstract class Triangle extends Shape {
 
@@ -38,7 +41,7 @@ public abstract class Triangle extends Shape {
     }
 
     @Override
-    String getName() {
+    public String getName() {
         return "triangle";
     }
 

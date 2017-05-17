@@ -1,13 +1,13 @@
+package shapes.circles;
+
+import shapes.Color;;
+
 /**
  * @author Yurii Malikov
  */
 public class BlackCircle extends Circle {
 
-    private Color color;
-
-    public BlackCircle() {
-        color = Color.BLACK;
-    }
+    private static final Color color = Color.BLACK;
 
     @Override
     public Color getColor() {
@@ -15,7 +15,7 @@ public class BlackCircle extends Circle {
     }
 
     @Override
-    String getName() {
+    public String getName() {
         return getColor().name().toLowerCase() + ' ' + super.getName();
     }
 
