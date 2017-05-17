@@ -24,7 +24,7 @@ public abstract class Triangle extends Shape {
     }
 
     public double getArea() {
-        double p = this.getPerimeter();
+        double p = this.getPerimeter() / 2;
         return Math.sqrt(p * (p - sideA) * (p - sideB) * (p	- sideC));
     }
 
