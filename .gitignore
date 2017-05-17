@@ -4,3 +4,4 @@ target
 *.iml
 log
 mySql.properties
+/bin/
