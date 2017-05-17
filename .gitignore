@@ -5,4 +5,4 @@ target
 log
 mySql.properties
 /bin/
-src/runner/
+src/runner
