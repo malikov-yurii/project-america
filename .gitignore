@@ -5,3 +5,4 @@ target
 log
 mySql.properties
 /bin/
+src/*.java
