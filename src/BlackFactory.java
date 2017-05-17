@@ -4,12 +4,12 @@
 public class BlackFactory extends BaseFactory {
 
     @Override
-    Circle createCircle() {
+    public Circle createCircle() {
         return new BlackCircle();
     }
 
     @Override
-    Triangle createTriangle() {
+    public Triangle createTriangle() {
         return new BlackTriangle();
     }
 
